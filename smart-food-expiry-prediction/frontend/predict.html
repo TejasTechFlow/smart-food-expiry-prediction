@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Predict Expiry · Smart Food Expiry</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"></head>
+<body><aside class="sidebar" id="sidebar"></aside><main class="content"><button class="btn btn-light menu-btn mb-2" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+<div id="spinner" class="d-none position-fixed top-50 start-50 translate-middle" style="z-index:3000"><div class="spinner-border text-success" style="width:3rem;height:3rem"></div></div>
+<h2>Predict Food Expiry</h2><p class="text-muted">Fill in the details and the model estimates the shelf life.</p>
+<div class="row g-4"><div class="col-xl-6"><div class="card p-4"><form id="form" novalidate></form><div class="mt-3 d-flex gap-2 flex-wrap"><button class="btn btn-success" id="go"><i class="fa-solid fa-wand-magic-sparkles"></i> Predict Expiry</button><button class="btn btn-outline-secondary" id="reset" type="button">Reset Form</button><button class="btn btn-outline-success" id="example" type="button">Example Data</button></div></div></div>
+<div class="col-xl-6"><div id="alert"></div><div id="result"><div class="card p-4 text-muted text-center"><i class="fa-solid fa-hourglass-half fs-1 mb-2"></i>Your prediction will appear here.</div></div></div></div>
+<div class="footer">Estimates from an educational model trained on synthetic data. Not a food-safety judgement.</div></main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/api.js"></script>
+<script src="js/predict.js"></script></body></html>
